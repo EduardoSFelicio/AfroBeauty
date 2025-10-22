@@ -1,0 +1,2095 @@
+    @font-face {
+    font-family: 'Roboto titulo';
+    src: url(Fontes/Roboto-Medium.ttf);
+}
+
+:root {
+    --branco: #f6f6f6;
+    --preto: #121212;
+    
+    --vermelho: #720202;
+    --bege: #F2E4C9;
+    --bege-saturado: #ecd19d;
+    --marrom-escuro: #230d10;
+    --marrom-claro: #3b2017;
+    --barro: #73392c;
+    --caramelo: #a6774e;
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('Fontes/PlayfairDisplay-Bold.ttf');    
+}
+
+@font-face {
+    font-family: 'playfair R';
+    src: url('Fontes/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto bold';
+    src: url(Fontes/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto normal';
+    src: url(Fontes/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto light';
+    src: url(Fontes/Roboto-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+* p{
+    cursor: default;   
+}
+
+* h1{
+    cursor: default;   
+}
+
+* h2{
+    cursor: default;   
+}
+
+* h3{
+    cursor: default;   
+}
+
+* h4{
+    cursor: default;   
+}
+
+* h5{
+    cursor: default;   
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden; 
+    background-color: var(--marrom-escuro);
+}
+
+.div_space{
+    height: 10vh;
+    width: 100%;
+    background-color: var(--preto);
+    box-shadow: black 0px 20px 10px;
+}
+
+/*************************** CSS para o index INICIO ***************************/
+
+
+/*************************** Navbar começo ***************************/
+
+.navbar{
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 25px;
+    background-color: var(--preto);
+    color: var(--bege);     
+}
+
+.logo{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding-left: 5vw;
+}
+
+.logo img{
+    width: 5vw;
+    width: 5vw;
+    border-radius: 75px;
+    transition: 0.1s;
+}
+
+.nome{
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    margin-left: 4vw;
+}
+
+.nome a{
+    font-family: 'playfair';
+    text-decoration: none;
+    color: var(--bege);
+    transition: 0.2s;
+}
+
+.nome a:hover{
+    color: var(--caramelo);
+}
+
+.menucentral{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 7px;
+    margin: 20px;
+}
+
+.menucentral a{
+    text-decoration: none;
+    color: var(--bege);
+    font-size: 2vw;
+    font-family: 'Roboto bold';
+    transition: 5s;
+}
+
+.menucentral p:hover{
+    color: var(--caramelo);
+    font-size: 2.1vw;
+}
+
+/*************************** Navbar fim ***************************/
+
+/*************************** Footer começo ***************************/
+
+.footer{
+    background-color: var(--preto);
+    justify-content: center;
+    font-family: 'Roboto normal';
+    width: 100%;
+    height: 15vh;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.footer>a{
+    margin-left: 7vh;
+}
+
+.footer p{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer p:hover{
+    color: var(--bege);
+}
+
+
+
+.footer img{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 35px;
+}
+
+.logoFooter{
+    width: 4.5vw !important;
+    height: 9vh !important;
+}
+
+.footer div{
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 7vh;
+}
+
+
+/*************************** Footer fim ***************************/
+
+
+/*************************** Imagens descrição começo ***************************/
+.i2{
+    margin-left: 150px
+}
+
+.i3{
+    margin-left: 50px;
+}
+
+/*************************** Imagens descrição fim ***************************/
+
+/*************************** CSS para o carosel ***************************/
+
+
+.cCarosel{
+    background-image: url(easybraids/assets/outros/2025-05-14165031.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 105vh; 
+    background-repeat: round;
+    object-position: center;
+    object-fit: contain;
+    display: grid;
+    grid-template-rows: 60% 20% 10%;
+    align-items: center;
+}  
+
+
+.cCarosel div a{
+    margin-bottom: 25vh;
+    margin-left: 25vh;
+}
+
+.playstore{
+    width: 24vh;
+    height: 8vh;
+}
+
+
+.cCarosel div:not(:first-child):not(:last-child){
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.cCarosel div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cCarosel div:first-child{
+    padding-left: 25vh;
+}
+
+
+.cCarosel h1{
+    color: var(--bege);
+    font-family: 'Roboto bold';
+    font-size: 9vh;
+}
+
+.cCarosel h2{
+    color: white;
+    font-family: 'Roboto bold';
+    font-size: 4vh;
+}
+
+.cCarosel p{
+    color: var(--bege);
+    font-family: 'Roboto normal';
+    font-size: 2.9vh;
+}
+
+.buton{
+    text-decoration: none;
+    color: var(--barro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bege-saturado);
+    border-radius: 6px;
+    width: 22vh;
+    height: 6.5vh;
+    border: transparent;
+    font-family: 'Roboto bold';
+    font-size: 2.5vh;
+    box-shadow: black 2px 2px 2px;
+    margin-bottom: 26vh !important;
+    margin-left: 5vh !important;
+    transition: 0.5s;
+}
+
+.buton:hover{
+    background-color: var(--bege);
+}
+
+
+
+/*************************** CSS para o carosel FIM ***************************/
+
+
+/*************************** PT2 começo ***************************/
+
+
+
+.pt2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--bege);
+    background-image: url(easybraids/assets/outros/grid-claro-1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.principal_pt2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;          
+}
+
+.texto{
+    width: 40%;
+    margin-left: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto normal';
+}
+
+.texto h1{
+    font-size: 2vw;
+}
+
+.texto p{
+    margin-bottom: 10vh;
+    margin-top: 3vh;
+    font-size: 1.8vw;
+    text-align: justify;
+}
+
+.img{
+    background-color: var(--vermelho);
+    width: 40vw;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    z-index: 3;
+}
+
+.img1{
+    z-index: 1;
+    width: 12vw !important;
+    height: 47vh!important;
+    position: absolute;
+    margin-left: 23vw;
+}
+
+.img2{
+    z-index: 3;
+    width: 12vw !important;
+    height: 47vh!important;
+    position: absolute;
+    margin-right: 23vw;
+}
+
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--marrom-escuro);  
+    height: 100vh;
+    width: 6.5rem;   
+    flex-direction: column;
+    
+    font-size: larger;
+}
+
+.side h1{
+    font-family: 'Roboto normal';   
+    color: var(--bege);
+    transform: rotate(-90deg);
+    font-size: clamp(5rem, 1vh, 7rem);
+    white-space: pre;    
+}
+
+
+.img img{
+    width: 15vw;
+    height: 62vh;
+    z-index: 0;
+}
+
+/*************************** PT2 fim ***************************/
+
+/*************************** TRANÇAS APRESENTAÇÃO INICIO ***************************/
+
+.div_space_v{
+    height: 10vh;
+    width: 100%;
+    background-color: var(--vermelho);
+    box-shadow: black 5px 15px 5px;
+}
+
+.tranca_apresentacao{
+    background-image: url(easybraids/assets/outros/braids.png);
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: round;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img_in div img{
+    height: 30vh;
+    width: 18vw;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.521) 0px 5px 2px;
+    transition: 1s;
+}
+
+.img_in div img:hover{
+    height: 30.3vh;
+    width: 18.3vw;
+}
+
+.imgs_out{
+    height: 100vh !important;
+    width: 40vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vh;
+}
+
+.img_in{
+    height: 85vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.img_in div{
+    margin-left: 2vw;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.img_in div>img{
+    margin-bottom: 2vh;
+}
+
+.img_in p{
+    font-family: 'Roboto bold';
+    font-size: 2vw;
+}
+
+/*************************** TRANÇAS APRESENTAÇÃO TEXTOS ***************************/
+
+.texts{
+    width: 34vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texts h1{
+    font-family: 'Roboto bold';
+    font-size: 2.2vw;
+    margin-bottom: 5vh;
+}
+
+.texts p{
+    font-family: 'Roboto normal';
+    font-size: 1.8vw;
+    margin-bottom: 4vh;
+    word-spacing: 1vw;
+}
+
+.texts p a{
+    text-decoration: none;
+    color: var(--barro);
+    font-family: 'Roboto bold';
+}
+
+.texts p a:hover{
+    text-decoration: underline;
+}   
+
+.g{
+    text-decoration: none;
+    color: var(--vermelho);
+    border-radius: 7px;
+    font-family: 'Roboto normal';
+}
+
+.g:hover{
+    text-decoration: underline;
+}
+/*************************** TRANÇAS APRESENTAÇÃO FIM ***************************/
+
+/*************************** Sobre começo ***************************/
+
+.sSobre{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--marrom-escuro);
+    color: white;
+    height: 48vh;
+    width: 100%;
+}
+
+.sSobre p{
+    width: 27%;
+    height: 95%;
+    font-size: 25px;
+    cursor: default;
+    color: white;
+}
+
+.txtSobre{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+    align-items: center;
+    font-family: 'Roboto normal';
+    cursor: default;
+    flex-direction: row;
+    height: auto;
+}
+
+.sSobre h1{
+    font-family: 'playfair';
+    font-size: 50px;
+    cursor: default;
+}
+
+.cSobre img{
+    width: 500px;
+    height: 500px;
+}
+
+.txtSobre input{
+    width: 137px;
+    height: 47px;
+    background-color: var(--caramelo);
+    color: var(--bege);
+    border: var(--marrom-claro) solid 2px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.txtSobre input:hover{
+    background-color: var(--marrom-claro);
+    color: white;
+    border: var(--caramelo) solid 2px;
+    cursor: pointer;
+}
+
+/*************************** Sobre fim ***************************/
+
+/*************************** CSS para o index FIM ***************************/
+
+
+/*************************** CSS para a galeria INICIO ***************************/
+
+
+.cGrid{
+    width: 100%;
+    height: auto;
+    margin: 80px 0px 80px 0px;
+    padding: 0px 50px 0px 50px;
+}
+
+.grids{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 840px 400px 450px;
+    grid-gap: 50px;
+    grid-auto-rows: 600px;
+    margin-top: 50px;
+}
+
+.trancas{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 7px;
+    color: var(--marrom-escuro);
+    font-family: 'Roboto normal';
+}
+
+.txtTranca p{
+    cursor: default;
+    font-size: 30px;
+    font-family: 'playfair R';
+}
+
+.txtTranca p a{
+    font-size: 28px;
+    font-family: 'playfair';
+    color: var(--marrom-escuro);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.txtTranca{
+    width: 85%;
+    height: 100%;
+    background-color: var(--bege);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.txtTranca p a:hover{
+    color: var(--caramelo);
+    font-size: 29px;
+}
+
+.trancas img{
+    width: 85%;
+    height: 75%;
+}
+
+.grids-2{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 420px 920px 350px;
+    grid-gap: 50px;
+    grid-auto-rows: 600px;
+    margin-top: 50px;
+}
+
+.grids-3{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 400px 480px 810px;
+    grid-gap: 50px;
+    grid-auto-rows: 600px;
+    margin-top: 50px;
+}
+
+
+/*************************** CSS para a galeria FIM ***************************/
+
+
+
+/*************************** CSS para o carometro INICIO ***************************/
+
+.tituloSobre{
+    font-family: 'playfair';
+    background-image: url(new/seção-contato-inicial-2-no-black.png);
+    background-size: cover;
+    font-size: 43px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    cursor: default;
+    justify-content: center;
+    color: white;
+}
+
+.carometros{
+    width: 100%;
+    height: auto;
+}
+
+.carometro{
+    width: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--branco);
+    background-color: var(--vermelho);
+}
+
+.carometroalt{
+    width: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: var(--vermelho);
+    background-color: var(--bege);
+}
+
+
+.txt{
+    max-width: 830px;
+    height: auto;
+    font-family: 'Roboto normal';
+    font-size: 22px;
+    text-align: justify;
+    cursor: default;
+    padding-bottom: 10px;
+}
+
+.txt h1{
+    cursor: default;
+    margin-bottom: 20px;
+    font-size: 50px !important; 
+}
+
+.carometro img{
+    width: 400px;
+    height: 400px;
+    border: var(--marrom-escuro) solid 7px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    object-fit: cover;
+}
+
+.carometroalt img{
+    width: 400px;
+    height: 400px;
+    border: var(--marrom-escuro) solid 7px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    object-fit: cover;
+}
+
+
+/*************************** CSS para o carometro FIM ***************************/
+
+/*************************** CSS para Galeria COMEÇO ***************************/
+
+.titulo_galeria{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--marrom-escuro);
+    color: white;
+    height: 35vh;
+    width: 100%;
+    padding-left: 15vw;
+}
+
+.titulo_galeria p{
+    cursor: default;
+    width: 70%;
+    height: 27%;
+    font-size: 30px;
+    color: white;
+}
+
+.txtGaleria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: 'Roboto normal';
+    height: auto;
+}
+
+.tituloGl{
+    cursor: default;
+    font-family: 'playfair';
+    font-size: 70px;
+}
+
+/*************************** CSS para Galeria FIM ***************************/
+
+/*************************** CSS agenda COMEÇO  ***************************/
+
+.agenda{
+    width: auto;
+    height: 90vh;
+    background-color: var(--bege);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.agenda_grid{
+    display: grid;
+    grid-template-columns: 40vh 60vh 40vh;
+    grid-template-rows: 80vh;
+    grid-column-gap: 5vw;
+}
+
+.agenda_grid img{
+    width: 10vw;
+    height: 10vh
+}
+
+.agenda_grid p{
+    color: var(--bege-saturado);
+    font-size: 3vh;
+    font-family: 'Roboto normal';
+}
+
+
+.agenda_grid h1{
+    color: var(--bege); 
+   font-size: 5vh;
+   font-family: 'Roboto bold';
+   overflow: hidden;
+}
+
+
+.agenda_grid>div{
+    background-color: var(--vermelho);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.637) -9px 9px 2px;
+}
+
+.div1{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    align-items: start;
+    overflow: hidden;
+}
+
+.div1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div1 div h1{
+    margin-right: 15vh;
+    margin-bottom: 1vh;
+}
+
+.div1 div p{
+    width: 30vh;
+}
+
+.div1 img{
+    width: 15vw;
+    height: 38vh;
+    margin-left: 4vh;
+}
+
+
+.div2{
+    display: grid;
+    grid-template-columns: 50vh, 80vh;
+    grid-template-rows: auto;
+    grid-gap: 5vh;
+    grid-template-areas: "header header";
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.div2 a{
+    display: inline-flex;
+    justify-content: center;
+    align-items:    center;
+    text-decoration: none;
+    background-color: var(--bege-saturado);
+    color: var(--barro);
+    border-radius: 20px;
+    width: 9vw;
+    height: 4vh;
+    font-size: 2vh;
+    font-family: 'Roboto bold';
+    margin: 28vh 0px 0px 6vh;
+    box-shadow: rgba(0, 0, 0, 0.637) -5px 5px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.div2 a:hover{
+    background-color: var(--bege);
+    border: solid 1px var(--preto);
+    padding: 1rem;
+}
+
+.div2 img{
+    width: 16vw;
+    height: 45vh;
+    margin: 0vh 0px 0px -2vh;
+}
+
+.top{
+    grid-area: header;
+    height: 25vh;
+    width: 25vw;
+    margin: 5vh 0px 0px 5vh;
+}
+
+.top h1{
+    font-size: 4.2vh;
+    margin-bottom: 3vh;
+}
+
+.top p{
+    letter-spacing: 0.2vh;
+    font-size: 2.6vh;
+}
+
+.div3{
+    display: grid;
+    grid-template-rows: 30% 60%;
+    grid-gap: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.div3 img{
+    width: 15vw;
+    height: 45vh;
+    border-radius: 20px;
+    margin: 0px 0px 5vh 11.2vh;
+}
+
+.div3 h1{
+    margin: 5vh 0px 0vh 4vh;
+}
+
+.div3 p{
+    margin: 2vh 0px 0vh 4vh;
+    font-size: 3vh;
+    width: 30vh;
+}
+
+/*************************** CSS agenda FIM  ***************************/
+
+/*************************** SOBRE INICIO  ***************************/
+
+.sobre_in>h1{
+    font-family: 'Roboto bold';
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0vh 0px 5vh 0px;
+    padding-top: 5vh;
+}
+
+.sobre{
+    height: 100vh;
+    width: 100%;
+    background-repeat: round;
+    background-image: url(easybraids/assets/outros/ba.png);
+    
+}
+
+.seta{
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0px 0px 0px;
+}
+
+.seta img{
+    width: 2.5vw;
+    height: 5.8vh;
+}
+
+.cards{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cards>div{
+    display: flex;
+    background-color: var(--bege-saturado);
+    border-radius: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.705) 0px 5px 5px;
+    width: 21vw;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    transition: 1s;
+}
+
+.cards>div:hover{
+    width: 21.8vw;
+    height: 71vh;
+}
+
+
+.cards>div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 68%;
+    width: 21vw;
+}
+
+.cards div h3{
+    font-family: 'Roboto bold';
+    font-size: 3vh;
+    transition: 1s;
+}
+
+/* .cards>div:hover   h3{
+    font-size: 3.3vh;
+} */
+
+.cards div p{
+    font-family: 'Roboto normal';
+    padding: 3vh;
+    font-size: 2.3vh;
+    height: 25.5vh;
+    
+}
+
+.cards div h4{
+    color: white;
+    background-color: var(--vermelho);
+    width: 5vw;
+    height: 10vh;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    font-family: 'Roboto bold';
+    /* margin-bottom: 7vh; */
+}
+.s{
+    margin-top: 15vh;
+    
+}
+
+.cards img{
+    width: 7vw;
+   height: 13vh;
+   margin-top: 10vh;
+}
+
+/*************************** SOBRE CAROMETRO  ***************************/
+
+.caro{
+    background-color: var(--vermelho);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5vw;
+}
+
+.titulo_caro{
+    color: white;
+    font-family: 'Roboto bold';
+    font-size: 4vh;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo_caro p{
+    margin-right: 107vh;
+}
+
+.carometro_out{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    background-color: var(--bege-saturado);
+    width: 90vw;
+    height: 80vh;
+    margin-bottom: 20vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    margin-left: 12vw;
+    padding-left: 10vw;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--preto);
+}
+::-webkit-scrollbar {
+    width: 2vh;
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bege-saturado);
+    border: solid var(--bege) 3px;
+    border-radius: 10px;
+}
+
+.carometro_out>div>div{
+    width: 19vw !important;
+    height: 69vh;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px!important;
+    background-color: var(--bege);
+    box-shadow: black -1px 6px 5px;
+    clip-path: polygon(
+    0 0,           /* topo esquerdo */
+    100% 0,        /* topo direito */
+    100% 90%,      /* lateral direita até antes da ponta */
+    50% 100%,      /* centro da ponta */
+    0 90%          /* lateral esquerda até antes da ponta */
+    );
+    transition: 0.5s;
+}
+
+.carometro_out>div>div:hover{
+    width: 28vw;
+    height: 70.5vh; 
+    background-color: #f1e9da;
+}
+
+
+.carometro_out>div{
+    width: 210%;
+    display: flex;
+    padding-top: 5vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+.carometro_out img{
+    height: 53%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center ;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px!important;
+}
+
+
+.car_txt{
+    color: var(--preto);
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.car_txt div{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.car_txt h1{
+    font-family: 'Roboto bold';
+    font-size: 2vw;
+    transition: 0.5s;
+}
+
+
+
+.car_txt h5{
+    font-family: 'Roboto bold';
+    margin-right: 1vw;
+    font-size: 0.9vw;
+    transition: 0.5s;
+}
+
+
+
+.car_txt p{
+    font-family: 'Roboto normal';
+    text-align: justify;
+    font-size: 0.9vw;
+    height: 19vh;
+    padding-right: 2vw;
+    margin-top: 0.8vh;
+}
+
+
+
+/*************************** SOBRE FIM  ***************************/
+
+/*************************** USUARIO COMEÇO  ***************************/
+
+.cUsu{
+    background-color: var(--bege);
+    background-image: url(easybraids/assets/outros/grid-claro-1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 92vh;
+    display: grid;
+    grid-template-rows: 20% 65% 15%;
+    align-items: center;
+    justify-items: center;
+    padding: 0px 30vh 0px 30vh;
+    font-family: 'Roboto normal';
+}
+
+.escolha{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.escolha div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.escolha img{
+    width: 32vh;
+    height: 32vh;
+    border-radius: 100vh;
+    border: solid var(--barro) 6px;
+    padding: 6px;
+    background-color: var(--bege-saturado);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.301);
+    transition: 0.8s;
+}
+
+.escolha img:hover{
+    width: 36vh;
+    height: 36vh;
+    border-radius: 100vh;
+    border: solid var(--bege-saturado) 6px;
+    padding: 6px;
+    background-color: var(--barro);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.301);
+}
+
+.escolha h1{
+    font-size: 4vh;
+}
+
+.titulo{
+    font-family: 'Roboto bold';
+    color: var(--marrom-escuro);
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5vh;
+    cursor: default;
+}
+
+
+.BTN a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 6vh;
+    border: transparent;
+    background-color: var(--barro);
+    color: var(--bege);
+    font-family: 'Roboto bold';
+    font-size: 1vw;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.BTN a:hover{
+
+    background-color: var(--vermelho);
+
+}
+
+
+/*************************** USUARIO FIM  ***************************/
+
+/*************************** CONTA USU INICIO  ***************************/
+
+.cConta{
+    background-image: url(easybraids/assets/outros/Screenshot_13.png);
+    background-repeat: round;
+    width: 100%;
+    height: 115vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.div5{
+    display: grid;
+    grid-template-rows: 10% 65%;
+}
+
+.div5 div{
+    padding-top: 6vh;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;  
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10vh;
+    font-family: 'Roboto bold';
+    font-size: 2vh;
+    color: var(--bege-saturado);
+}
+
+
+
+#name{
+    background: url(easybraids/assets/icones/icone-user-4x.png) no-repeat left;
+    background-size: 2.5vh;
+    background-color: white;
+    padding-left: 5vh;
+}
+
+#email{
+    background: url(easybraids/assets/icones/icone-email-logo-claro-1x.png) no-repeat left;
+    background-size: 3.5vh;
+    background-color: white;
+    padding-left: 5vh;
+}
+
+#pass{
+    z-index: 1;
+    background: url(easybraids/assets/icones/icone-cadeado-4x.png) no-repeat left;
+    position: relative;
+    background-size: 2vh;
+    background-color: white;
+    padding-left: 5vh;
+    width: 22.1vw;
+    height: 5.1vh
+}
+
+.eye{  
+    max-width: auto;
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%); 
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icone-eye-show-1x.png);
+    background-repeat: no-repeat;
+}
+
+.eye_hide{  
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icon-eye-hide-1x.png);
+    background-repeat: no-repeat;
+}
+
+.eyeconfirm{
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icone-eye-show-1x.png);
+    background-repeat: no-repeat;
+}
+
+.eyeconfirm_hide{
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icon-eye-hide-1x.png);
+    background-repeat: no-repeat;
+}
+
+#pass_verif{
+    z-index: 1;
+    background: url(easybraids/assets/icones/icone-cadeado-4x.png) no-repeat left;
+    position: relative;
+    background-size: 2vh;
+    background-color: white;
+    padding-left: 5vh;
+    width: 22.1vw;
+    height: 5.1vh
+}
+
+#tel{
+    background: url(easybraids/assets/icones/icone-telefone-logo-1x.png) no-repeat left;
+    background-size: 3vh;
+    background-color: white;
+    padding-left: 5vh;
+}
+
+#date{ 
+    width: 8vw;
+    height: 5vh;
+    padding-left: 1.2vw;
+    font-family: "Roboto bold";
+    font-size: 0.8vw;
+}
+
+form{
+    display: grid;
+    grid-template-rows: 85% 15%;
+}
+
+.slaa{
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+}
+
+
+form button{
+    width: 22vh;
+    height: 5vh;
+    background-color: var(--marrom-escuro);
+    font-family: 'Roboto bold';
+    font-size: 2vh;
+    color: var(--bege);
+    border: transparent;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 1vh 0px 0px 10vw;
+}
+
+form button:hover{
+    background-color: var(--marrom-claro);
+}
+
+form div input{
+    z-index: 2;
+    width: min(50vh, 50%);
+    height: 13vh;
+    border-radius: 10px;
+    border: black solid 0.4vh;
+    font-family: 'Roboto normal';
+    color: var(--preto);
+}
+
+form label{
+    color: var(--bege-saturado);
+    font-family: 'Roboto normal';
+}
+
+
+input:not(:last-child){
+    margin-bottom: 7vh;
+}
+
+.select{
+    width: 8vw;
+    height: 5vh;        
+    padding-left: 2vw;
+    font-family: "Roboto bold";
+    font-size: 0.8vw;
+    border-radius: 10px;
+    border: black solid 0.4vh;
+    margin-left: 6vw;
+}
+
+.c{
+    height: 85.6%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(
+        0% 0%,
+        60% 0%,
+        60% 0%,
+        88.9% 50%,
+        63% 100%,
+        0% 100%,
+        0% 100%
+    );
+    overflow: hidden;
+    
+}
+
+.c img{
+    width: 82vw; 
+    height: 56vw;
+    margin: 5vw 0vw 2vh 1.3vw;
+
+}
+
+
+/*************************** CONTA USU FIM  ***************************/
+
+
+/*************************** BAIXAR COMEÇO  ***************************/
+
+
+.cBaixar{
+    background-color: var(--bege);
+    background-image: url(easybraids/assets/outros/grid-claro-1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+}
+
+.div_b{
+    display: grid;
+    grid-template-rows: 35% 75%;
+    font-family: 'Roboto bold';
+    color: var(--marrom-claro) !important;
+    font-size: 3vh
+}
+
+.div_b p{
+    margin-top: 1vh;
+    font-family: 'Roboto normal';
+}
+
+.div_b div:not(:last-child){
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0px 0px 2.2em 19vw;
+}
+
+.div_b img{
+    margin: 0em 0px 65.3vh 18.9vw;
+    width: 14vw;
+    height: auto;
+    transition: 0.6s;
+}
+
+.div_b img:hover{
+    width: 14.3vw;
+    height: auto;
+
+}
+
+.pg_ini{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pg{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--vermelho);
+    text-decoration: none;
+    color: var(--bege);
+    border-radius: 15px;
+    width: 15vw;
+    height: 7.9vh;
+    margin: 0px 0px 66.8vh 4vw;
+    transition: 0.8s;
+}
+
+.pg:hover{
+    width: 15.3vw;
+    height: 9vh;
+    background-color: #7e1a1a;
+}
+
+.cell{
+    margin-top: 17.4vh;
+    width: 35vh;
+    height: 70vh;
+}
+
+
+
+/*************************** BAIXAR FIM  ***************************/
+
+
+/*************************** USU TRAN COMEÇO  ***************************/
+
+.CConta{
+    background-image: url(easybraids/assets/outros/cadas_tran.png);
+    object-fit: cover;
+    background-repeat: round;
+    width: 100%;
+    height: 115vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+.img_tran{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(
+        0% 0%,
+        60% 0%,
+        60% 0%,
+        90% 50%,
+        59% 100%,
+        0% 100%,
+        0% 100%
+    );
+}
+
+.img_tran img{
+    margin: 3vh 20vh 0px 0px;       
+}
+.div6{
+    display: grid;
+    grid-template-rows: 6% 75%;
+}
+
+.div6 div{
+    padding-top: 6vh;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10vh;
+    font-family: 'Roboto bold';
+    font-size: 2vh;
+    color: var(--bege-saturado);
+}
+
+#cpf{
+    background-image: url(easybraids/assets/icones/icone-cpf-4x.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 2.5vh;
+    background-color: white;
+    padding-left: 5vh;
+    width: 22.1vw;
+    height: 5.1vh
+}
+
+.form input{
+    z-index: 2;
+    width: min(50vh, 50%);
+    height: 9vh;
+    border-radius: 10px;
+    border: black solid 0.4vh;
+    font-family: 'Roboto normal';
+    color: var(--preto);
+}
+
+.div_out_input{
+    width: auto;
+    height: auto;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.btn{
+
+    margin: 0vh 0px 0vh 10vw !important;
+
+}
+
+.eye2{  
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icone-eye-show-1x.png);
+    background-repeat: no-repeat;
+}
+
+.eye_hide2{  
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icon-eye-hide-1x.png);
+    background-repeat: no-repeat;
+}
+
+.eyeconfirm2{
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icone-eye-show-1x.png);
+    background-repeat: no-repeat;
+}
+
+.eyeconfirm_hide2{
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icon-eye-hide-1x.png);
+    background-repeat: no-repeat;
+}
+
+.eye_cpf{
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icone-eye-show-1x.png);
+    background-repeat: no-repeat;
+}
+
+.eye_cpf_hide{
+    z-index: 2;
+    position: absolute; 
+    left: max(75vw,50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url(easybraids/assets/icones/icon-eye-hide-1x.png);
+    background-repeat: no-repeat;
+} 
+
+/*************************** USU TRAN FIM  ***************************/
+
+/*************************** NOVA GALERIA INICIO  ***************************/
+
+.cSobre_new{
+    background-color: var(--bege);
+    background-image: url(easybraids/assets/outros/grid-claro-1x.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 7% 93%;
+    height: auto;
+    padding-bottom: 15vh;
+}
+
+.pesq_bar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pesq_bar input{
+    background-image: url(easybraids/assets/icones/icone-lupa-4x.png);
+    background-repeat: no-repeat;
+    background-size: 1.1vw;
+    background-position: right;
+    padding-inline: 2vw;
+    border: transparent;
+    box-shadow: 0px 0.2vw 0.1vw var(--preto);
+    border-radius: 20px;
+    font-size: 0.9vw;
+    font-family: 'Roboto normal';
+    width: 45vw;
+    height: 4.5vh;
+}
+
+.cSobre_new img{
+    width: 1vw;
+    height: 1vh;
+
+}
+
+.sobre_imgs_out{
+    width: 100%;
+    padding: 7vw 10vw 0px 10vw;
+}
+
+.sobre_imgs_in{
+    width: 100%;
+    height: 100%;
+}
+
+.first_line{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 50vh;
+}
+
+.first_line div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+.first_line img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid black 3px;
+    border-bottom: solid black 3vw;
+}
+
+.second_rows{
+    height: 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.Left{
+    padding: 1vw;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+}
+
+.l1{
+    justify-content: space-evenly;
+    height: 85vh;
+    display: grid; 
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "img1 img2"
+    "b b";
+}
+
+.l1 div:last-child{
+    grid-area: b;
+}
+
+.l1 div:first-child{
+    grid-area: img1;
+}
+
+.l1 div:not(:last-child):not(:first-child){
+    grid-area: img2;
+}
+.l1 div:last-child{
+    margin-top: 3vh;
+}
+
+.l1 div:first-child{
+    margin-right: 3vh;
+}
+
+.l1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: solid black 3px;
+    border-bottom: solid black 3vw;
+}
+
+.l2{
+    margin-top: 3vh;
+    height: 85vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.l2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 95%;
+    border: solid black 3px;
+    border-bottom: solid black 3vw;
+}
+
+.l3{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.l3 img{
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+    border: solid black 3px;
+    border-bottom: solid black 3vw;
+}
+
+.l3 div:first-child{
+    margin-right: 1.5vw;
+}
+
+/***************** NOVA GALERIA DIREITA  *****************/
+
+.right{
+    width: 100%;
+    height: 85%;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.r1{
+    height: 83vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img2"
+    "img3 img4 ";
+}
+
+.r1 img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border: solid black 3px;
+    border-bottom: solid black 3vw;
+}
+
+.r1_2{
+    grid-area: img1;
+    margin-right: 2vw;
+}
+
+.r1_3{
+    grid-area: img2;
+}
+
+.r1_4 img{
+    height: 95% !important;
+    width: 90%;
+}
+
+.r1_4{
+    grid-area: img3;
+}
+
+.r1_5{
+    grid-area: img4;
+    height: 100% !important;
+}
+
+.r2{
+    height: 84vh;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img3";
+}
+
+.r2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: solid black 3px;
+    border-bottom: solid black 3vw;
+}
+
+.r2_1{
+    grid-area: img1;
+}
+
+.r2_2{
+    grid-area: img2;
+    margin-left: 1vw;
+}
+
+.r2_3{
+    grid-area: img3;
+    margin-top: 1vw;
+}
+
+.r3{
+    height: 55vh;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.r3 img{
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+    border: solid black 3px;
+    border-bottom: solid black 3vw;
+}
+
+.r3 div:last-child{
+    margin-left: 2vw;
+}
+
+/*************************** NOVA GALERIA FIM  ***************************/
+
+/*************************** TERMOS E CONDIÇÕES COMEÇO ***************************/
+
+.cTermos{
+    background-color: var(--bege);
+    background-image: url(easybraids/assets/outros/grid-claro-1x.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    height: 320vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cTermos div:not(:last-child){
+    margin-bottom: 10vh;
+}
+
+.texts_termos{
+    padding-left: 5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    text-align: justify;
+}
+
+.titulo_term h1{
+    font-family: 'Roboto bold';
+    font-size: 2.5vw !important;
+}
+
+.cTermos h1{
+    font-family: 'Roboto bold';
+    font-size: 2vw;
+    margin-bottom: 2vh;
+}
+
+.cTermos p{
+    font-family: 'Roboto normal';
+    font-size: 1.3vw;
+}
+
+/*************************** TERMOS E CONDIÇÕES FIM ***************************/
+
+
+.hidden{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.hidden_off{
+    opacity: 1;
+}

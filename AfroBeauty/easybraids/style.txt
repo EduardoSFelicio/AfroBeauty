@@ -1,0 +1,19 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:root {
+--branco: #f6f6f6;
+--preto: #121212;
+
+--vermelho: #720202;
+--bege: #f2e4c9;
+--bege-saturado: #ecd19d;
+--marrom-escuro: #230d10;
+--marrom-claro: #3b2017;
+--barro: #73392c;
+--caramelo: a6774e;
+}
+
